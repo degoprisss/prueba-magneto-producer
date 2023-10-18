@@ -11,7 +11,7 @@ import { ProducerController } from "src/presentation/controllers/producer.contro
                 name: 'consumer-Integration',
                 transport: Transport.RMQ,
                 options: {
-                    urls: [`amqp://${process.env.RABBITMQ_HOST}:${process.env.RABBITMQ_PORT}`],
+                    urls: [`amqp://${process.env.RABBITMQ_HOST || 'rabbitmq'}:${process.env.RABBITMQ_PORT || 5672}`],
                     queue: 'cats_queue',
                     queueOptions: {
                         durable: false
