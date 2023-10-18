@@ -45,6 +45,14 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Open The Swagger
+
+$ http://localhost:3000/api/producer/docs/
+
+In the swagger you can find the two endpoints to create and list users.
+
+```bash
+
 ## Test
 
 ```bash
